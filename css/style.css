@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-weight: 400;
+    font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -9,16 +10,15 @@ body {
 }
 
 .wrapper {
-    position: relative;
     margin: 40px auto;
     width: 540px;
     height: 169px;
-    background: #111111;
+    background: #111111e6;
     border-radius: 14px;
+    display: flex;
 }
 
 .img {
-    background-image: url(../img/токсины.jpg);
     background-repeat: no-repeat;
     width: 170px;
     height: 169px;
@@ -27,144 +27,126 @@ body {
 }
 
 .spotify {
-    position: absolute;
-    right: 25px;
-    top: 18px;
     background-image: url(../img/Vector.svg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 21px;
     height: 21px;
-
 }
 
 .name-music {
-    position: absolute;
-    left: 200px;
-    top: 18px;
-    font-family: 'Inter', sans-serif;
     color: #FFFFFF;
     font-weight: 700px;
     font-size: 18px;
-    line-height: 22px;
 }
 
 .author {
-    position: absolute;
-    font-family: 'Inter', sans-serif;
     color: #696969;
-    left: 200px;
-    top: 44px;
     font-size: 13.5px;
-    line-height: 17px;
+    margin: 5px 0 20px 0;
 }
 
-.line {
-    position: absolute;
-    right: 81px;
-    top: 86px;
-    background-image: url(../img/line.svg);
-    background: #DADADA;
-    background-repeat: no-repeat;
-    background-size: cover;
+.progress-line {
+    background: #696969;
+    border-radius: 5px;
+    cursor: pointer;
     width: 257px;
     height: 3px;
 }
 
-.time {
-    position: absolute;
-    right: 31px;
-    top: 81px;
-    font-family: 'Inter', sans-serif;
-    font-size: 12px;
-    line-height: 15px;
-    color: #696969;
+.line {
+    background: #DADADA;
+    width: 257px;
+    height: 3px;
+    border-radius: 5px;
 }
 
+
+.duration {
+    font-size: 10px;
+    color: #696969;
+    margin-left: 10px;
+}
+
+/* .repeat .active {
+    animation: rotateAnimation 3s infinite linear;
+    transform-origin: -80px -80px;
+} */
+
 .repeat {
-    position: absolute;
-    left: 205px;
-    top: 117px;
     background-image: url(../img/repeat.svg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 17px;
     height: 17px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.right-not-last div:not(:last-child) {
+    margin-right: 10px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-auto {
+    margin: auto;
+}
+
+.top-btns {
+    margin-top: 10px;
 }
 
 .circle-play {
-    position: absolute;
-    right: 166px;
-    top: 107px;
-    background-image: url(../img/Ellipse\ 2.svg);
+    background-image: url(../img/playBtn.svg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 38px;
     height: 38px;
+    cursor: pointer;
 }
 
-.play {
-    position: absolute;
-    right: 12px;
-    top: 12px;
-    background-image: url(../img/play.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 12px;
-    height: 14px;
-}
 
 .circle-before {
-    position: absolute;
-    right: 224px;
-    top: 109px;
-    background-image: url(../img/Ellipse\ 2.svg);
+    background-image: url(../img/beforeee.svg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 34px;
     height: 34px;
+    cursor: pointer;
 }
 
-.before {
-    position: absolute;
-    right: 10px;
-    top: 12px;
-    background-image: url(../img/before.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 17px;
-    height: 10px;
-}
 
 .circle-next {
-    position: absolute;
-    right: 111px;
-    top: 109px;
-    background-image: url(../img/Ellipse\ 2.svg);
+    background-image: url(../img/nexxxtsvg.svg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 34px;
     height: 34px;
+    cursor: pointer;
 }
 
-.next {
-    position: absolute;
-    right: 8px;
-    top: 12px;
-    background-image: url(../img/next.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 17px;
-    height: 10px;
-}
 
 .like {
-    position: absolute;
-    right: 34px;
-    top: 118px;
     background-image: url(../img/heart.svg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 19px;
     height: 17px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
 }
